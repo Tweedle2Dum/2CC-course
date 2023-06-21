@@ -1,0 +1,42 @@
+.wrapper-search {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0 0 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+}
+
+input[type="text"]{
+    padding: 16px;
+    border-radius: 12px;
+    appearance: none;
+    border: 0;
+    font-size: larger;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    margin: 5em 0 20px 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+
+.cardContainer {
+    display: flex;
+    gap: 20px;  
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid rgb(42, 166, 219);
+}

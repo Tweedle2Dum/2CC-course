@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+
+
+:root{
+    --bgColor : #282828;
+    --tert : #138680;
+    --sec : #ffffff;
+    --button-hover:rgba(48, 209, 238, 0.7);
+    --sidebar: rgba(48, 209, 238, 0.7);
+
+    box-sizing: border-box;
+    font-family: 'Almarai', sans-serif;
+    letter-spacing: 1px;
+
+    background-color: var(--bgColor);
+    color: var(--sec);
+
+    
+}
+
+
+
+
+body{
+
+/*     min-height: 100vh;
+ */    display: grid;
+    grid-template-columns: 300px  1fr;
+    margin: 0;
+}
+
+.wrapper{
+    background-color: var(--bgColor);
+    color: var(--sec);
+    padding: 0 4rem 4rem 4rem;
+}
+
+img{
+    
+    height:2.5rem ;
+    width: 2.5rem;
+    
+}
+
+.sidebar{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-content: center;
+    align-content: flex-start;
+    background-color: var(--tert);
+    color: var(--sec);
+    
+}
+
+.sidebar>div{
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+
+
+.main-links>div{
+    align-items: center;
+}
+
+.secondary-links>div{
+    align-items: center;
+}
+
+
+.logo,.main-links>div,.secondary-links>div{
+    display: flex;
+    gap: 1rem;
+}
+
+
+header{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+input{
+    appearance: none;
+    border-radius: 1.2rem;
+    border: 2px solid #606383;
+    padding: 4px;
+}
+
+.quick-links{
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+form{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    
+}
+
+
+.quick-links>img{
+    height: 48px;
+    width: 48px;
+    border-radius: 1.2rem;
+    border: 2px solid var(--tert);
+}
+
+.welcome{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+p{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+p>em{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+.welcome>img{
+    height:100px ;
+    width:100px ;
+    border-radius: 1.2rem;
+    border: 3px solid var(--tert);
+}
+form>input{
+    flex:1 1 auto;
+}
+
+
+.btns{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.btns>button{
+    font-size: 1.2rem;
+    border-radius: 1.2rem;
+    border:1px solid transparent;
+    background-color: var(--tert);
+    color: aliceblue;
+    padding:10px ;
+    box-shadow: 0 0 5px black;
+    width: 100px;
+}
+
+
+main{
+    
+    display: grid;
+    grid-template-columns: 75% 25%;
+    
+}
+
+.cards{
+    padding: 1rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+    "heading heading"
+    "card-1 card-2 "
+    "card-3 card-4 "
+    "card-5 card-6 ";
+}
+
+.card-heading{
+    grid-area: heading;
+    
+}
+
+.news{
+    
+    display: grid;
+    grid-template-rows: 1.5rem 1fr 1.5rem 1fr;
+    gap: 2rem;
+    grid-template-areas: 
+    "heading-a"
+    "announcement"
+    "heading-t"
+    "trending";
+    padding: 0 1rem 1rem 1rem;
+
+    
+
+}
+
+.card-heading1{
+    grid-area: heading-a;
+}
+.card-heading2{
+    grid-area: heading-t;
+}
+
+
+.announcement-card{
+    grid-area:announcement;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement-card>div{
+    border-bottom: 2px solid var(--tert);
+    border-radius: 2px;
+}
+
+.trending-card{
+    grid-area:trending;
+    display: flex;
+    flex-direction: column;
+}
+.trending-card>div{
+    border-bottom: 2px solid var(--tert);
+    border-radius: 2px;
+}
+
+.trending-card>div>div{
+    display: flex;
+}
+
+main p{
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.card-1{
+
+    grid-area: card-1;
+
+}
+.card-2{
+    grid-area: card-2;
+
+    
+}
+.card-3{
+    grid-area: card-3;
+
+    
+}
+.card-4{
+    grid-area: card-4;
+
+    
+}
+.card-5{
+    grid-area: card-5;
+
+    
+}
+.card-6{
+    grid-area: card-6;
+    
+}
+
+
+.card-1,.card-2,.card-3,.card-4,.card-5,.card-6,.trending-card,.announcement-card{
+    border-left: 2px solid var(--tert);
+    border-radius: 1.2rem;
+    padding: 1em;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.announcement-card>img{
+    background-color: aliceblue;
+}
+
+
+.icon-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+

@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
 
 :root {
-        /* css variables for colors */
+    /* css variables for colors */
     --bgColor : #1e3652;
-    --tert : #90b2d1;
+    --tert : #6ce7e0;
     --sec : #ffffff;
-
+    --button-hover:rgba(48, 209, 238, 0.7);
     /* css reset */
     margin: 0;
     
@@ -21,14 +21,20 @@
 }
 
 body {
-    margin: 20px;
-    overflow-x: hidden;
+    margin: 0;
+    padding: 20px;
+     overflow-x: hidden;
 }
 
 
 button {
     appearance: none;
     border: 0;
+    transition: background-color 300ms ease-in-out;
+}   
+
+button:hover {
+    background-color: var(--button-hover);
 }
 
 .logo_header {
@@ -249,4 +255,20 @@ footer {
     font-size: 24px;
 
 
+}
+
+a {
+    text-decoration: none;
+    color:var(--sec);
+    display: inline-block;
+    transition: transform 300ms ease-in-out;
+}
+
+a:visited {
+    color: var(--sec);
+
+}
+
+a:hover {
+    transform: scale(1.2);
 }
