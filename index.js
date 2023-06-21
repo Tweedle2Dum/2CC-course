@@ -32,6 +32,8 @@ function createCard(track) {
     source.type = "audio/mpeg";
     audio.appendChild(source);
     card.appendChild(audio);
+
+    card.style.backgroundColor="seagreen"
   
     return card;
   }
